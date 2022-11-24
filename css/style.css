@@ -1,0 +1,253 @@
+@import "./home/home.css";
+@import "./header/header.css";
+@import "./global/global.css";
+@import "./admin/devs.css";
+@import "./contato/contato.css";
+@import "./termos/termos.css";
+@import "./produto/produto.css";
+@import "./footer/footer.css";
+@import "./produto-loja/produto-loja.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* GENERAL */
+
+section {
+  padding: 3rem 9%;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.heading h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+/* HEADER */
+
+/* HOME */
+
+/* DESENVOLVEDORES */
+
+/* CONTACT */
+
+/* TERMOS DE USO */
+
+/* PRODUTO */
+
+/* PRODUTOS DA LOJA */
+
+/* FOOTER */
+
+/* CSS para responsividade das telas */
+/* media queries */
+@media (max-width: 2000px) {
+  .produto .produto-info .lanchonete-info.mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 3rem;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+  .results-filtros {
+    margin-left: -2rem;
+  }
+  .results-cards .card img {
+    height: 80px;
+  }
+  .produto .produto-info .lanchonete-info.mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    justify-content: flex-end;
+    gap: 2rem;
+  }
+  .header .logo {
+    transform: translateX(0);
+    left: 1rem;
+  }
+  .header #menu-btn {
+    display: inline-block;
+  }
+  .header .navbar {
+    margin-left: 0;
+    flex-direction: column;
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: #000;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .navbar a {
+    display: block;
+    margin: 3rem 2rem;
+    text-align: center;
+  }
+  .header .navbar .space {
+    display: none;
+  }
+  .dev-box img {
+    width: 75%;
+  }
+  .login-form p {
+    font-size: 1.3rem;
+  }
+  .results-filtros {
+    margin-left: -1rem;
+  }
+  .produto .produto-info .lanchonete-info.mobile {
+    display: none;
+  }
+}
+
+/* @media (max-width: 768px) {
+  .home {
+    background: none;
+  }
+  .home .content h3 {
+    font-size: 2.6rem;
+  }
+  .dev-box {
+    align-items: center;
+  }
+  .devs-container .dev-box.direita {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .devs-container .dev-box.esquerda {
+    flex-direction: column;
+    text-align: center;
+  }
+  .dev-box img {
+    width: 50%;
+  }
+  .dev-box img:hover {
+    margin-bottom: 1rem;
+    transform: scale(1.1);
+    border: 3px solid #f0b212;
+  }
+  .login-form .login-box {
+    width: 60%;
+  }
+  .login-form p {
+    font-size: 1.3rem;
+  }
+  .results-filtros {
+    margin-left: -1rem;
+  }
+  .results .results-slide h3 {
+    font-size: 2rem;
+  }
+  .results .results-cards {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+  }
+  .results .results-cards .card {
+    max-width: 10rem;
+    max-height: 15rem;
+    border-radius: 20px;
+  }
+  .results-cards .card img {
+    height: 50px;
+  }
+  .produto .produto-info .lanchonete-info.mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 430px) {
+  html {
+    font-size: 50%;
+  }
+  .header .logo {
+    margin-left: 2rem;
+  }
+  .home .content {
+    margin-right: 1rem;
+  }
+  .footer .credit {
+    font-size: 1.5rem;
+  }
+  .results {
+    flex-direction: column;
+  }
+  .results-cards .card img {
+    height: 50px;
+  }
+  .results-filtros {
+    margin-left: 0.5rem;
+    width: 100%;
+    text-align: center;
+    border-right: none;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #aaa;
+    height: auto;
+  }
+  .results-filtros .filtros-radio {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .results .results-slide {
+    font-size: 140%;
+  }
+  .produto .conteudos {
+    flex-direction: column-reverse;
+  }
+  .produto .produto-header {
+    justify-content: center;
+  }
+  .produto .conteudos .produto-desc,
+  .produto .conteudos .produto-info {
+    margin-top: 2rem;
+    width: 100%;
+    padding: 0;
+  }
+  .produto .produto-info img {
+    width: 80%;
+  }
+  .produto .produto-info .btn-favorito {
+    width: 70%;
+  }
+  .produto .produto-info .lanchonete-info.cheia {
+    display: none;
+  }
+  .produto .produto-info .lanchonete-info.mobile {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .loja-header .loja-info h1 {
+    font-size: 2rem;
+  }
+  .loja-header img {
+    width: 15rem;
+    margin-right: 15%;
+  }
+  .logo-result {
+    margin: 0 auto 2rem auto;
+  }
+} */

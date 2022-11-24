@@ -1,0 +1,77 @@
+body {
+  height: 100vh;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+}
+.devs-container .heading h3 {
+  color: #323232;
+  font-size: 50px;
+}
+.navbar {
+  width: 100%;
+  padding: 50px 0;
+  margin-left: 30px;
+}
+.navbar .nav-content .voltar {
+  display: block;
+}
+.navbar .nav-content {
+  display: grid;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.devs-container {
+  margin-top: 7.5rem;
+}
+
+.devs-container .dev-box {
+  margin: 5rem 0;
+  color: #323232;
+}
+.devs-container .dev-box img {
+  border-radius: 50%;
+  margin: 0 3rem;
+  width: 200px;
+  height: 200px;
+}
+.devs-container .dev-box img:hover {
+  transform: scale(1.1);
+  border: 3px solid #f0b212;
+}
+.devs-container .dev-box.direita {
+  text-align: right;
+}
+.devs-container .dev-box .esquerda {
+  text-align: left;
+}
+
+.devs-container .dev-box .dev-text-box h3 {
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #323232;
+}
+.devs-container .dev-box .dev-text-box p {
+  text-transform: none;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #323232;
+  padding: 2rem 0;
+}
+.devs-container .dev-box .social-links {
+  font-size: 3.5rem;
+}
+.devs-container .dev-box .social-links i {
+  color: #323232;
+  margin: 0 0.5rem;
+}
+.devs-container .dev-box .social-links a:hover i {
+  color: #f0b212;
+}

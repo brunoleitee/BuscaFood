@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuscaFood® - Comparador de Preços FastFood</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <!-- biblioteca de animação on scroll -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- css comum -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="background-bg">
+        <img class="background" src="./images/Bacground/bg2.png" alt="">
+        <img class="background-slider" src="./images/Bacground/slider.png" alt="">
+    </div>
+    <!-- header section starts -->
+    <header class="header">
+        <!-- <div id="menu-btn" class="fas fa-bars icons"></div> -->
+        <div class="logo">
+            <a href="index.html" class="logo"><img src="./images/Logo.svg" alt=""></a>
+        </div>
+        <div class="nav-container">
+            <a href="index.html">Home</a>
+            <a href="./desenvolvedores.html">Desenvolvedores</a>
+            <span class="space"></span>
+            <a href="./contato.html">Contato</a>
+            <a href="#blogs">Nosso App</a>
+            <a href="./cadastro-em-etapas/index.html" class="btn" id="login">Empresa</a>
+        </div>
+    </header>
+    <!-- header section ends -->
+
+    <!-- home sections starts -->
+    <section class="home" id="home">
+        <div data-aos="fade-up" class="content">
+            <div class="texto-bg">
+                <h3 style="color:#323232">Pessoas podem te decepcionar. Um lanche no precinho, <span style="color:#F0B212">NUNCA!!</span>
+                </h3>
+            </div>
+            <form action="./resultados.php" class="search-form" id="search">
+                <!-- campos de busca -->
+                <div class="search-box">
+                    <input type="text" class="search" name="prato" placeholder="Busque aqui..." required>
+                    <i id="icon" class="fas fa-search"></i>
+                </div>
+                <div class="search-box">
+                    <input type="text" class="location" name="location" placeholder="Localização..." required>
+                    <i id="icon1" class="fas fa-map-marker-alt"></i>
+                </div>
+
+                <!-- categorias dos produtos -->
+                <div class="checkbox-list">
+                    <ul class="categorias">
+                        <li class="categoria hamburg">
+                            <input name="categorias" type="radio" id="hamburg" value="1" checked>
+                            <label for="hamburg" title="Hamburguer">Hamburguer</label>
+                            <i class="fas fa-hamburger"></i>
+                        </li>
+
+                        <li class="categoria hotdog">
+                            <input name="categorias" type="radio" id="hotdog" value="2">
+                            <label for="hotdog" title="Cachorro-Quente">Cachorro-Quente</label>
+                            <i class="fas fa-hotdog"></i>
+                        </li>
+
+                        <li class="categoria pizza">
+                            <input name="categorias" type="radio" id="pizza" value="4">
+                            <label for="pizza" title="Pizza">Pizza</label>
+                            <i class="fas fa-pizza-slice"></i>
+                        </li>
+
+                        <li class="categoria porcao">
+                            <input name="categorias" id="porcao" type="radio" value="3">
+                            <label for="porcao" title="Porções">Porção</label>
+                            <i class="fa-solid fa-bowl-rice"></i>
+                        </li>
+                    </ul>
+                </div>
+                <input type="submit" name="btn-search" class="btn" value="Buscar">
+            </form>
+        </div>
+    </section>
+    <!-- home sections ends -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+        });
+    </script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

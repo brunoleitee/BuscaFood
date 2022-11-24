@@ -1,0 +1,132 @@
+.background-bg {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.background-bg .background {
+  position: absolute;
+  width: 35%;
+  z-index: -1;
+}
+.background-bg .background-slider {
+  position: absolute;
+  margin-top: 13%;
+  margin-right: 110px;
+  width: 35%;
+  z-index: -1;
+}
+
+.texto-bg {
+  margin-bottom: 10%;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+.home .content {
+  max-width: 60rem;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.home .content form {
+  margin: 0 auto;
+}
+.home .content .search-box {
+  position: relative;
+  margin-top: 28px;
+}
+.home .content .search-box input[type="text"] {
+  padding: 10px 15px;
+  text-indent: 10px;
+  font-size: 18px;
+  background: none;
+  border: 1px solid #3232324b;
+  text-transform: none;
+  width: 100%;
+  border-radius: 25px;
+}
+.btn {
+  margin-top: 20px;
+  background: #323232;
+  font-size: 18px;
+  padding: 8px 20px;
+  border-radius: 10px 30px 10px 30px;
+  color: aliceblue;
+}
+.home .content .search-box input[type="text"]:focus {
+  border-color: #f0b212;
+}
+.home .content .search-box i {
+  position: absolute;
+  top: 1.8rem;
+  right: 2rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #323232;
+}
+.home .content .search-box input:focus + i {
+  color: #f0b212;
+}
+div li i:hover {
+  transform: scale(1.1);
+}
+.logo {
+  transition: transform 0.3s;
+}
+img:hover {
+  transform: scale(1.1);
+}
+.home .content h3 {
+  font-size: 40px;
+  color: #323232;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.home .content .categorias {
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  list-style: none;
+}
+.home .content .categorias .categoria {
+  height: 100%;
+  width: 20%;
+  box-sizing: border-box;
+  margin: 0 1rem;
+  position: relative;
+  border-radius: 10px 30px 10px 30px;
+  color: #323232;
+}
+.home .content .categorias input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+.home .content .categorias .categoria label {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  cursor: pointer;
+  display: block;
+  font-size: 0;
+  white-space: nowrap;
+}
+.home .content .categorias .categoria i {
+  margin-top: 1rem;
+  font-size: 3rem;
+  align-self: center;
+}
+
+.categorias input:checked + label + i {
+  color: #f0b212;
+}

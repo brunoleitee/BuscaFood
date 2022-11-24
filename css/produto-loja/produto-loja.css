@@ -1,0 +1,39 @@
+.loja-header {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  max-height: 15rem;
+  width: 100%;
+}
+.loja-header .loja-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+  color: #fff;
+}
+.loja-header .loja-info h1 {
+  font-size: 3.2rem;
+}
+.loja-header .loja-info p {
+  font-size: 1.5rem;
+}
+.loja-header .loja-info i {
+  color: #f0b212;
+}
+.loja-header img {
+  width: 20rem;
+  margin-right: 9%;
+  border-radius: 10px;
+}
+.loja-produtos .results {
+  justify-content: center;
+}
+.loja-produtos h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+}

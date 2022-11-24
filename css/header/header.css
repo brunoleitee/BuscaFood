@@ -1,0 +1,96 @@
+.header {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  height: 20%;
+  align-items: center;
+  font-size: 18px;
+  border-bottom: #3232325b solid 1px;
+}
+.header .logo {
+  margin-left: 30px;
+}
+
+.header .nav-container a {
+  margin-right: 30px;
+  align-items: center;
+  color: rgb(0, 0, 0);
+}
+.header .nav-container .btn {
+  background: #323232;
+  padding: 8px 15px;
+  border-radius: 10px 30px 10px 30px;
+  color: aliceblue;
+}
+.btn#login {
+}
+.btn:hover,
+.btn#login:hover {
+  color: #000;
+  background: #f0b212;
+}
+/* 
+
+.header .icons {
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #fff;
+}
+.header .icons:hover {
+  color: #f0b212;
+}
+.header #menu-btn {
+  display: none;
+}
+.header .navbar a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 2rem;
+}
+.header .navbar a:hover {
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  color: #f0b212;
+}
+.header .navbar .space {
+  margin-left: 3rem;
+  display: inline-block;
+  width: 13rem;
+}
+.header .logo {
+  position: absolute;
+  top: 1.8rem;
+  margin-right: 3rem;
+  margin-bottom: 10px;
+}
+.header .logo img {
+  width: 15rem;
+}
+.header .search-form {
+  height: 7rem;
+  padding: 0 2rem;
+  border-top: 0.2rem solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  background: #000;
+  position: absolute;
+  top: 99%;
+  left: 0;
+  right: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.header .search-form.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.header .search-form input {
+  width: 100%;
+  background: none;
+  text-transform: none;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.header .fa-times {
+  transform: rotate(180deg);
+} */

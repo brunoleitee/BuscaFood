@@ -1,0 +1,14 @@
+.footer {
+  text-align: center;
+  align-items: center;
+  background: linear-gradient(transparent, #000);
+  position: sticky;
+}
+.footer .credit {
+  font-size: 2rem;
+  line-height: 2;
+  color: #aaa;
+}
+.footer .credit span {
+  color: #f0b212;
+}
