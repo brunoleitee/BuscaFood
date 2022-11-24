@@ -1,34 +1,118 @@
 .header {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: space-between;
-  height: 20%;
   align-items: center;
+  padding: 20px;
+  max-width: 1300px;
+  box-sizing: border-box;
   font-size: 18px;
-  border-bottom: #3232325b solid 1px;
-}
-.header .logo {
-  margin-left: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.header .nav-container a {
+.header .header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.header-menu a {
+  font-size: 18px;
+  color: #323232;
+  display: inline-block;
+  padding: 10px 8px;
+  text-decoration: none;
+  position: relative;
+}
+.header-menu #linha::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: #323232;
+  margin-top: 4px;
+  transition: 0.4s;
+  position: absolute;
+}
+.header-menu #linha:hover:after {
+  width: 100%;
+}
+.header-linha {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background: #32323249;
+  height: 1px;
+}
+@media (max-width: 1200px) {
+  .header-bg {
+    height: 80px;
+  }
+  .header-bg .header a {
+    align-items: center;
+    font-size: 14px;
+  }
+  header .logo {
+    position: relative;
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 800px) {
+  .header-menu a {
+    background: rgb(235, 233, 233);
+    padding: 12px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  .header-menu {
+    gap: 20px;
+  }
+  .header a::after {
+    display: none;
+  }
+  .background {
+    display: none;
+  }
+  .background-slider {
+    display: none;
+  }
+}
+@media (max-widht: 600px) {
+  .header-menu {
+    gap: 12px;
+  }
+  .header-menu a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+#login {
+  background: #323232;
+  padding: 8px 15px;
+  border-radius: 10px 30px 10px 30px;
+  color: #fff;
+}
+#login:hover {
+  color: #000;
+  background: #f0b212;
+}
+
+/* .header .nav-container a {
   margin-right: 30px;
   align-items: center;
   color: rgb(0, 0, 0);
 }
-.header .nav-container .btn {
+.header .header-menu .btn {
   background: #323232;
   padding: 8px 15px;
   border-radius: 10px 30px 10px 30px;
   color: aliceblue;
 }
-.btn#login {
-}
-.btn:hover,
-.btn#login:hover {
-  color: #000;
-  background: #f0b212;
-}
+
+*/
 /* 
 
 .header .icons {
