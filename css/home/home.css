@@ -1,55 +1,52 @@
-.background-bg {
-  position: absolute;
+/* .background-bg {
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: flex-end;
-}
+} */
 
-.background-bg .background {
+/* .background-bg .background {
   position: absolute;
   width: 35%;
   z-index: -1;
-}
-.background-bg .background-slider {
+} */
+/* .background-bg .background-slider {
   margin-top: 13%;
   margin-right: 110px;
   width: 35%;
   z-index: -1;
+} */
+.index {
+  background: url(../../images/Bacground/background.png) no-repeat;
+  background-size: 100%;
+}
+section {
+  margin-top: 200px;
+  padding: 20px 150px;
 }
 
-.texto-bg {
-  margin-bottom: 20%;
-}
-
-.home {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-@media (max-widht: 1200px) {
+@media (max-width: 800px) {
   .home {
-    height: 200px;
+    grid-template-columns: 1fr;
   }
 }
-
 .home .content {
-  max-width: 60rem;
+  max-width: 750px;
   text-align: center;
   justify-content: center;
-  margin: 0 auto;
-  padding-top: 2rem;
 }
 .home .content form {
   margin: 0 auto;
+  width: 100%;
 }
 .home .content .search-box {
   position: relative;
   margin-top: 18px;
 }
 .home .content .search-box input[type="text"] {
-  padding: 10px 15px;
+  padding: 13px 0;
   text-indent: 10px;
-  font-size: 18px;
+  font-size: 20px;
   background: none;
   border: 1px solid #3232324b;
   text-transform: none;
@@ -71,14 +68,20 @@
 }
 .home .content .search-box i {
   position: absolute;
-  top: 1.8rem;
+  top: 1.2rem;
   right: 2rem;
   font-size: 2.5rem;
   cursor: pointer;
-  color: #323232;
+  color: #3232324b;
 }
 .home .content .search-box input:focus + i {
   color: #f0b212;
+}
+.home .content .checkbox-list .categorias .categoria label:hover + i {
+  transform: scale(1.5);
+}
+.home .content .checkbox-list .categorias .categoria label + i:hover {
+  transform: scale(1.5);
 }
 div li i:hover {
   transform: scale(1.1);
@@ -95,7 +98,11 @@ img:hover {
   text-transform: uppercase;
   font-weight: 600;
 }
+
 @media (max-width: 1200px) {
+  .home {
+    height: 200px;
+  }
   .home .content h3 {
     align-items: center;
     font-size: 25px;
@@ -134,13 +141,16 @@ img:hover {
   border-radius: 10px 30px 10px 30px;
   color: #323232;
 }
+
 .home .content .categorias input[type="radio"] {
   opacity: 0;
   position: fixed;
   width: 0;
+  padding: 10px;
 }
 .home .content .categorias .categoria label {
   position: absolute;
+  z-index: 15;
   bottom: 0;
   top: 0;
   right: 0;

@@ -1,5 +1,5 @@
 let menuBtn = document.querySelector('#menu-btn');
-let navbar = document.querySelector('.header .navbar');
+let navbar = document.querySelector('.header .nav-container');
 
 // Ao clicar no icone 'menu-hamburger', o icone muda para o 'X' e o menu se espande revelando os itens;
 // Só ocorre quando está em dispositivo mobile;

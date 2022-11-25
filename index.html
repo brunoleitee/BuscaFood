@@ -14,19 +14,17 @@
     <!-- css comum -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
-<body>
-    <div class="background-bg">
+<body class="index">
+    <!-- <div class="background-bg">
         <img class="background" src="./images/Bacground/bg2.png" alt="">
         <img class="background-slider" src="./images/Bacground/slider.png" alt="">
-    </div>
+    </div> -->
     <!-- header section starts -->
-    <header class="header-bg">
-        <div class="header">
+    <header class="header">
             <a href="./">
                 <img class="logo" src="./images/Logo.svg" alt="Logo">
             </a>
-
+            <div id="menu-btn" class="fas fa-bars icons"></div> 
             <nav class="nav-container" aria-label="primaria">
                 <ul class="header-menu">
                     <li><a href="index.html" id="linha">Home</a></li>
@@ -35,21 +33,18 @@
                     <li><a href="" id="linha">Nosso App</a></li>
                     <li><a href="./cadastro-em-etapas/index.html" class="button01" id="login">Empresa</a></li>
                 </ul>
-
             </nav>
-        </div>
     </header>
-    <div class="header-linha"></div>
     <!-- header section ends -->
 
     <!-- home sections starts -->
     <section class="home" id="home">
         <div data-aos="fade-up" class="content">
-            <div class="texto-bg">
-                <h3 style="color:#323232">Pessoas podem te decepcionar. Um lanche no precinho, <span style="color:#F0B212">NUNCA!!</span>
-                </h3>
-            </div>
             <form action="./resultados.php" class="search-form" id="search">
+                <div class="texto-bg">
+                    <h3 style="color:#323232">Pessoas podem te decepcionar. Um lanche no precinho, <span style="color:#F0B212">NUNCA!!</span>
+                    </h3>
+                </div>
                 <!-- campos de busca -->
                 <div class="search-box">
                     <input type="text" class="search" name="prato" placeholder="Busque aqui..." required>
