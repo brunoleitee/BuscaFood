@@ -1,0 +1,31 @@
+@media (max-width: 1200px) {
+  .home {
+    height: 200px;
+  }
+  .home .content h3 {
+    align-items: center;
+    font-size: 25px;
+  }
+  header .logo {
+    position: relative;
+    max-width: 150px;
+  }
+  .button {
+    width: 120px;
+    height: 50px;
+    margin-top: 20px;
+    background: #323232;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 10px 30px 10px 30px;
+    color: #fff;
+  }
+}
+@media (max-width: 800px) {
+  .home {
+    grid-template-columns: 1fr;
+  }
+  .home .content h3{
+    font-size: 45px;
+  }
+}

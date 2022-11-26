@@ -1,14 +1,23 @@
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .devs-container .heading h3 {
   color: #323232;
   font-size: 50px;
 }
 .navbar {
   width: 100%;
-  padding: 50px 0;
+  padding: 30px 0;
   margin-left: 30px;
 }
-.navbar .nav-content .voltar {
-  display: block;
+.devs-h3{
+  font-size: 40px;
+  color: #323232;
+  text-align: center;
+  margin-top: 150px;
 }
 .navbar .nav-content {
   display: grid;

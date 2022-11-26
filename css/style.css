@@ -1,5 +1,7 @@
 @import "./home/home.css";
+@import "./home/media.css";
 @import "./header/header.css";
+@import "./header/media.css";
 @import "./global/global.css";
 @import "./admin/devs.css";
 @import "./contato/contato.css";
@@ -11,55 +13,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-/* GENERAL */
-
-/* section {
-  padding: 1rem 9%;
-} */
-.heading {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-.heading h3 {
-  font-size: 2rem;
-  text-transform: uppercase;
-  color: #fff;
-  margin-top: 1rem;
-}
-
-/* HEADER */
-
-/* HOME */
-
-/* DESENVOLVEDORES */
-
-/* CONTACT */
-
-/* TERMOS DE USO */
-
-/* PRODUTO */
-
-/* PRODUTOS DA LOJA */
-
-/* FOOTER */
-
-/* CSS para responsividade das telas */
-/* media queries */
 @media (max-width: 2000px) {
   .produto .produto-info .lanchonete-info.mobile {
     display: none;
   }
 }
 
+
+
+
+
+
 @media (max-width: 1200px) {
-  html {
-    font-size: 55%;
-  }
   .header {
     padding: 3rem;
-  }
-  section {
-    padding: 3rem 2rem;
   }
   .results-filtros {
     margin-left: -2rem;
@@ -73,33 +40,6 @@
 }
 
 @media (max-width: 991px) {
-  html {
-    font-size: 55%;
-  }
-  .header #menu-btn {
-    display: inline-block;
-  }
-  .header .navbar {
-    margin-left: 0;
-    flex-direction: column;
-    position: absolute;
-    top: 99%;
-    left: 0;
-    right: 0;
-    background: #000;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  }
-  .header .navbar.active {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-  .header .navbar a {
-    display: block;
-    margin: 3rem 2rem;
-    text-align: center;
-  }
-  .header .navbar .space {
-    display: none;
-  }
   .dev-box img {
     width: 75%;
   }

@@ -1,37 +1,15 @@
-/* .background-bg {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-} */
-
-/* .background-bg .background {
-  position: absolute;
-  width: 35%;
-  z-index: -1;
-} */
-/* .background-bg .background-slider {
-  margin-top: 13%;
-  margin-right: 110px;
-  width: 35%;
-  z-index: -1;
-} */
-.index {
-  background: url(../../images/Bacground/background.png) no-repeat;
-  background-size: 100%;
-}
 section {
   margin-top: 200px;
   padding: 20px 150px;
 }
-
-@media (max-width: 800px) {
-  .home {
-    grid-template-columns: 1fr;
-  }
+.index {
+  background: url(../../images/Bacground/background.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: auto;
 }
 .home .content {
-  max-width: 750px;
+  max-width: 800px;
   text-align: center;
   justify-content: center;
 }
@@ -39,48 +17,61 @@ section {
   margin: 0 auto;
   width: 100%;
 }
-.home .content .search-box {
-  position: relative;
-  margin-top: 18px;
-}
-.home .content .search-box input[type="text"] {
-  padding: 13px 0;
-  text-indent: 10px;
+.home .content .input-group input[type="text"] {
+  padding: 18px 0;
+  text-indent: 15px;
   font-size: 20px;
   background: none;
   border: 1px solid #3232324b;
   text-transform: none;
   width: 100%;
-  border-radius: 4px;
+  border-radius: 1rem;
 }
-.home .content .search-box input[type="text"]:focus {
+.home .content .input-group input[type="text"]:focus {
   border-color: #f0b212;
 }
-.button {
-  width: 200px;
-  height: 70px;
-  margin-top: 20px;
-  background: #323232;
-  font-size: 25px;
-  padding: 8px 20px;
-  border-radius: 10px 30px 10px 30px;
-  color: #fff;
+.input-group{
+  margin-top: 50px;
+  position: relative;
 }
-.button:hover{
+.input {
+  width: 100%;
+  border: solid 1.5px #9e9e9e;
+  background: none;
+  padding: 1rem;
+  font-size: 20px;
   color: #000;
-  background: #f0b212;
-  border-radius: 30px 10px 30px 10px;
-  transition: .5s;
+  transition: border 150ms cubic-bezier(0.4,0,0.2,1);
 }
-.home .content .search-box i {
+.input-group .user-label {
   position: absolute;
-  top: 1.2rem;
-  right: 2rem;
+  top: 5px;
+  left: 15px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.411);
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 150ms cubic-bezier(0.4,0,0.2,1);
+}
+.input:focus, .input:valid {
+  outline: none;
+  border: 1.5px solid #f0b212;
+}
+.input:focus ~ label.user-label, input:valid ~ label.user-label {
+  transform: translateY(-70%) scale(0.9);
+  background-color: #fff;
+  padding: 0 .2rem;
+  color: #323232;
+}
+.home .content .input-group i {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.5rem;
   font-size: 2.5rem;
   cursor: pointer;
   color: #3232324b;
 }
-.home .content .search-box input:focus + i {
+.home .content .input-group .input:focus + label + i {
   color: #f0b212;
 }
 .home .content .checkbox-list .categorias .categoria label:hover + i {
@@ -89,47 +80,14 @@ section {
 .home .content .checkbox-list .categorias .categoria label + i:hover {
   transform: scale(1.5);
 }
-div li i:hover {
-  transform: scale(1.1);
-}
-.logo {
-  transition: transform 0.3s;
-}
-img:hover {
-  transform: scale(1.1);
-}
 .home .content h3 {
   font-size: 45px;
   color: #323232;
   text-transform: uppercase;
   font-weight: 600;
+  line-height: 40px;
+  margin-bottom: 100px;
 }
-
-@media (max-width: 1200px) {
-  .home {
-    height: 200px;
-  }
-  .home .content h3 {
-    align-items: center;
-    font-size: 25px;
-    margin-bottom: -50px;
-  }
-  header .logo {
-    position: relative;
-    max-width: 150px;
-  }
-  .button {
-    width: 120px;
-    height: 50px;
-    margin-top: 20px;
-    background: #323232;
-    font-size: 14px;
-    padding: 8px 20px;
-    border-radius: 10px 30px 10px 30px;
-    color: #fff;
-  }
-}
-
 .home .content .categorias {
   width: 100%;
   margin: 1rem 0;
@@ -147,7 +105,6 @@ img:hover {
   border-radius: 10px 30px 10px 30px;
   color: #323232;
 }
-
 .home .content .categorias input[type="radio"] {
   opacity: 0;
   position: fixed;
@@ -175,3 +132,22 @@ img:hover {
 .categorias input:checked + label + i {
   color: #f0b212;
 }
+.button {
+  width: 200px;
+  height: 70px;
+  margin-top: 20px;
+  background: #323232;
+  font-size: 25px;
+  padding: 8px 20px;
+  border-radius: 10px 30px 10px 30px;
+  color: #fff;
+}
+.button:hover {
+  font-weight: 600;
+  color: #000;
+  background: #f0b212;
+  border-radius: 30px 10px 30px 10px;
+  transition: 0.8s;
+}
+
+
