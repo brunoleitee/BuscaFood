@@ -22,7 +22,7 @@
   font-size: 1.5rem;
 }
 .loja-header .loja-info i {
-  color: #f0b212;
+  color: #var(--amarelo);
 }
 .loja-header img {
   width: 20rem;

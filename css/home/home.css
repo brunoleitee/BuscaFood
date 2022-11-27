@@ -1,12 +1,81 @@
+html{
+  overflow: hidden;
+}
+
 section {
   margin-top: 200px;
   padding: 20px 150px;
 }
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 20px;
+  z-index: 1000;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 150px;
+  box-sizing: border-box;
+  font-size: 18px;
+  color: transparent;
+  border-bottom: 1px solid #3232324b;
+}
+
+.header .header-menu {
+  display: flex;
+  gap: 30px;
+}
+.header-menu a {
+  font-size: 24px;
+  color: var(--pr1);
+  display: inline-block;
+  padding: 10px 0;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+}
+.header-menu a:hover{
+  transform: scale(1.2);
+  transition: 0.8s;
+}
+.header-menu #linha::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: var(--pr1);
+  margin-top: 4px;
+  transition: 0.4s;
+  position: absolute;
+}
+.header-menu #linha:hover:after {
+  width: 100%;
+}
+.header #menu-btn {
+  display: none;
+}
+
+
+#login {
+  background:var(--pr1);
+  padding: 8px 15px;
+  border-radius: 10px 30px 10px 30px;
+  color: var(--branco);
+}
+#login:hover {
+  color: var(--black);
+  background: var(--amarelo);
+  border-radius: 30px 10px 30px 10px;
+  transition: 0.8s;
+}
+
 .index {
   background: url(../../images/Bacground/background.png) no-repeat;
   background-position: center;
   background-size: cover;
-  overflow: auto;
+  overflow: hidden;
 }
 .home .content {
   max-width: 800px;
@@ -76,10 +145,10 @@ section {
 }
 .home .content .checkbox-list .categorias .categoria label:hover + i {
   transform: scale(1.5);
+  transition: 0.8s;
+  color: #f0b212;
 }
-.home .content .checkbox-list .categorias .categoria label + i:hover {
-  transform: scale(1.5);
-}
+
 .home .content h3 {
   font-size: 45px;
   color: #323232;

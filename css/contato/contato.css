@@ -1,3 +1,70 @@
+
+.header-contato{
+  position: fixed;
+  padding: 0px 150px;
+  height: 126px;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  z-index: 1000;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-bottom: 1px solid #3232324b;
+  box-shadow: 0px 11px 12px -6px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-contato .navbar-contato{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.btn {
+  display: inline-block;
+  border-radius: 7px;
+  border: none;
+  background: #f0b212;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0px 14px 56px -11px #f0b212;
+  padding: 1em;
+  transition: all 0.4s;
+  cursor: pointer;
+  width: 100%;
+ }
+ 
+ .btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+ }
+ 
+ .btn span:after {
+  content: 'mensagem!';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 57px;
+  transition: 0.7s;
+ }
+ 
+ .btn:hover span {
+  padding-right: 3.55em;
+ }
+ 
+ .btn:hover span:after {
+  opacity: 4;
+  right: 0;
+ }
+
+
+
+
+
 .contact .heading h3 {
   color: #323232;
   margin-bottom: 60px;
@@ -13,6 +80,8 @@
 .contact .row .map {
   flex: 1 1 37rem;
   width: 100%;
+  box-shadow: -5px 3px 17px -3px rgba(0,0,0,0.48);
+  border-radius: 25px;
 }
 .contact .row .form {
   flex: 1 1 40rem;
@@ -54,12 +123,14 @@
 }
 .contact .row form .box,
 .login .box {
+  padding: 0 10px;
+  height: 60px;
+  border-radius: 8px;
   font-size: 1.6rem;
   color: #323232;
   background: none;
   border: 0.2rem solid #32323274;
   text-transform: none;
-
   margin: 0.7rem 0;
 }
 .contact .row #tipo-contato {
@@ -76,10 +147,7 @@
   height: 15rem;
   resize: none;
 }
-.contact .row .form form input.btn {
-  text-align: center;
-  border: #323232 solid 1px;
-}
+
 .contact .row .form .input {
   padding: 1.2rem 1.4rem;
   border: #323232 solid 1px;
@@ -88,3 +156,33 @@
   display: grid;
   grid-template-columns: 1fr;
 }
+.footer{
+  background-color: #323232;
+}
+.footer .desenvolvedores{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 70px;
+  margin-top: 25px;
+}
+
+.footer .desenvolvedores img{
+  width: 120px;
+  border-radius: 50%;
+  height: 120px;
+}
+.footer h1{
+  color: #fff;
+  font-size: 40px;
+  font-weight: 800;
+}
+.footer .desenvolvedores .desenvolvedores-perfil{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+

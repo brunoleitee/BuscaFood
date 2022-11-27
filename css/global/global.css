@@ -2,27 +2,11 @@
   padding: 0;
   outline: none;
   border: none;
-  text-transform: capitalize;
-  transition: all 0.2s linear;
-}
-
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-  scroll-padding-top: 8rem;
-  overflow: hidden;
-}
-
-html::-webkit-scrollbar {
-  width: 0.5rem;
-}
-
-html::-webkit-scrollbar-track {
-  background: transparent;
+  text-transform: none;
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #f0b212;
+  background: #var(--amarelo);
   border-radius: 5rem;
 }
 
@@ -43,7 +27,7 @@ ul {
   padding: 0px;
   list-style: none;
 }
-img {
-  max-width: 100%;
-  display: block;
+/* html {
+  font-size: 62.5%;
 }
+ */

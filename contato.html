@@ -14,21 +14,21 @@
 </head>
 
 <body>
-    <header class="header">
-        <div id="menu-btn" class="fas fa-bars icons"></div>
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="./desenvolvedores.html">Desenvolvedores</a>
-            <span class="space"></span>
-            <a href="./contato.html">Contato</a>
-            <a href="#blogs">Nosso App</a>
-            <a href="./cadastro-em-etapas/index.html" class="btn" id="login">Empresa</a>
-        </nav>
+    <header class="header-contato">
         <a href="index.html" class="logo"><img src="./images/Logo.svg" alt=""></a>
+        <nav class="navbar-contato">
+            <button class="cta">
+                <span><a href="index.html">Home <svg viewBox="0 0 13 10" height="10px" width="15px">
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                            <path d="M1,5 L11,5"></path>
+                        </svg></a></span>
+
+            </button>
+            <div id="menu-btn" class="fas fa-bars icons"></div>
+        </nav>
     </header>
     <section class="contact" id="contact">
         <div class="heading">
-            <!-- <img src="./images/title-img.png" alt=""> -->
             <h3>Contate-nos!</h3>
         </div>
         <div class="row">
@@ -65,13 +65,37 @@
                     <input data-aos="fade-up" data-aos-delay="300" type="email" placeholder="E-mail" class="box" name="email" required>
                     <input data-aos="fade-up" data-aos-delay="450" type="number" placeholder="Telefone" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="11" class="box" name="telefone" id="telefone">
                     <textarea data-aos="fade-up" data-aos-delay="600" placeholder="Sua mensagem..." class="box" cols="30" rows="10" name="mensagem" required></textarea>
-                    <input data-aos="fade-up" data-aos-delay="750" type="submit" value="Enviar mensagem" class="btn">
+
+                    <button data-aos="fade-up" data-aos-delay="750" type="submit" class="btn" style="vertical-align:middle"><span>Enviar</span></button>
                 </form>
             </div>
         </div>
     </section>
     <!-- contact section ends -->
     <section class="footer">
+        <h1>Desenvolvedores</h1>
+        <div class="desenvolvedores">
+            <div class="desenvolvedores-perfil">
+                <img src="./images/Edu.jpg" alt="">
+                <span>Eduardo Decioli</span>
+            </div>
+            <div class="desenvolvedores-perfil">
+                <img src="./images/Hiago.png" alt="">
+                <span>Hiago de Oliveira Prado</span>
+            </div>
+            <div class="desenvolvedores-perfil">
+                <img src="./images/Joao H.png" alt="">
+                <span>Eduardo Decioli</span>
+            </div>
+            <div class="desenvolvedores-perfil">
+                <img src="./images/pic-2.png" alt="">
+                <span>Bruno Pereira Leite</span>
+            </div>
+            <div class="desenvolvedores-perfil">
+                <img src="./images/pic-4.jpg" alt="">
+                <span>João Henrique Lopes</span>
+            </div>
+        </div>
         <p class="credit">2022. <span>BuscaFood®.</span> All Rights reserved. </p>
     </section>
 

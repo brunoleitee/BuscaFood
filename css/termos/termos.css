@@ -12,7 +12,7 @@
   width: 1rem;
 }
 .termos::-webkit-scrollbar-thumb {
-  background: #f0b212;
+  background: #var(--amarelo);
   border-radius: 5rem;
 }
 .termos-box {
@@ -50,7 +50,7 @@
 }
 .termos-box .check {
   font-size: 1.5rem;
-  accent-color: #f0b212;
+  accent-color: #var(--amarelo);
 }
 /* RESULTADOS */
 .logo-result img {
@@ -92,15 +92,15 @@
   cursor: pointer;
 }
 .results-filtros .filtros-radio input {
-  accent-color: #f0b212;
+  accent-color: #var(--amarelo);
   cursor: pointer;
 }
 .results-filtros .filtros-radio p input:checked + label {
-  color: #f0b212;
+  color: #var(--amarelo);
 }
 .results .results-slide {
   margin-top: 1.5rem;
-  accent-color: #f0b212;
+  accent-color: #var(--amarelo);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -136,7 +136,7 @@
   max-height: 18rem;
   color: #fff;
   text-align: center;
-  border: 1px solid #f0b212;
+  border: 1px solid #var(--amarelo);
   border-radius: 33px;
 }
 .results-cards .card img {
@@ -151,11 +151,11 @@
   font-size: 1.3rem;
 }
 .results-cards .card .card-nota i {
-  color: #f0b212;
+  color: #var(--amarelo);
   margin-left: 0.3rem;
   align-self: center;
 }
 .results-cards .card h2 {
-  color: #f0b212;
+  color: #var(--amarelo);
   font-size: 2rem;
 }

@@ -9,6 +9,7 @@
 @import "./produto/produto.css";
 @import "./footer/footer.css";
 @import "./produto-loja/produto-loja.css";
+@import "./global/cores.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
@@ -18,13 +19,11 @@
     display: none;
   }
 }
+.footer .credit {
+  font-size: 1.5rem;
+}
 
-
-
-
-
-
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .header {
     padding: 3rem;
   }
@@ -52,7 +51,7 @@
   .produto .produto-info .lanchonete-info.mobile {
     display: none;
   }
-}
+} */
 
 /* @media (max-width: 768px) {
   .home {
@@ -78,7 +77,7 @@
   .dev-box img:hover {
     margin-bottom: 1rem;
     transform: scale(1.1);
-    border: 3px solid #f0b212;
+    border: 3px solid #var(--amarelo);
   }
   .login-form .login-box {
     width: 60%;
@@ -121,9 +120,7 @@
   .home .content {
     margin-right: 1rem;
   }
-  .footer .credit {
-    font-size: 1.5rem;
-  }
+  
   .results {
     flex-direction: column;
   }
