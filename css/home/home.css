@@ -2,8 +2,8 @@ html{
   overflow: hidden;
 }
 
+
 section {
-  margin-top: 200px;
   padding: 20px 150px;
 }
 .header {
@@ -77,12 +77,15 @@ section {
   background-size: cover;
   overflow: hidden;
 }
+.home{
+  margin-top: 200px;
+}
 .home .content {
   max-width: 800px;
   text-align: center;
   justify-content: center;
 }
-.home .content form {
+.home .content .search-form {
   margin: 0 auto;
   width: 100%;
 }
@@ -134,7 +137,7 @@ section {
 }
 .home .content .input-group i {
   position: absolute;
-  top: 1.6rem;
+  top: 1.1rem;
   right: 1.5rem;
   font-size: 2.5rem;
   cursor: pointer;

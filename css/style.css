@@ -21,6 +21,8 @@
 }
 .footer .credit {
   font-size: 1.5rem;
+  padding: 20px 0px;
+  margin-top: 40px;
 }
 
 /* @media (max-width: 1200px) {

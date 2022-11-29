@@ -1,9 +1,7 @@
-@media (max-width:1440px){
-
+@media (max-width: 1440px) {
   .home {
     width: 700px;
   }
-
 }
 
 @media (max-width: 1200px) {
@@ -32,9 +30,46 @@
 @media (max-width: 800px) {
   .home {
     width: 400px;
-    height: 300px;
+    
   }
-  .home .content h3{
+  
+  .home .content {
+    margin-top: -18%;
+  }
+  .home .content input {
+    height: 10px;
+  }
+  .home .content h3 {
     font-size: 45px;
   }
+  .checkbox-list label {
+    width: 2px;
+  }
+  .input-group .user-label {
+    position: absolute;
+    top: -9px;
+    left: 15px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.411);
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+  }
+  .input:focus ~ label.user-label, input:valid ~ label.user-label {
+    transform: translateY(-40%) scale(0.9);
+    background-color: #fff;
+    padding: 0 .2rem;
+    color: #323232;
+  }
+  .button{
+    margin-bottom: 10px;
+  }
+
+}
+@media (max-width: 400px) {
+  .home {
+    width: 100%;
+    margin: 0;
+  }
+ 
 }

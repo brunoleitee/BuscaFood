@@ -1,5 +1,4 @@
-
-.header-contato{
+.header-contato {
   position: fixed;
   padding: 0px 150px;
   height: 126px;
@@ -16,7 +15,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.header-contato .navbar-contato{
+.header-contato .navbar-contato {
   display: flex;
   gap: 30px;
   align-items: center;
@@ -34,38 +33,36 @@
   transition: all 0.4s;
   cursor: pointer;
   width: 100%;
- }
- 
- .btn span {
+}
+
+.btn span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.4s;
- }
- 
- .btn span:after {
-  content: 'mensagem!';
+}
+
+.btn span:after {
+  content: "mensagem!";
   position: absolute;
   opacity: 0;
   top: 0;
   left: 57px;
   transition: 0.7s;
- }
- 
- .btn:hover span {
+}
+
+.btn:hover span {
   padding-right: 3.55em;
- }
- 
- .btn:hover span:after {
+}
+
+.btn:hover span:after {
   opacity: 4;
   right: 0;
- }
-
-
-
-
+}
 
 .contact .heading h3 {
+  text-align: center;
+  font-size: 42px;
   color: #323232;
   margin-bottom: 60px;
 }
@@ -79,21 +76,25 @@
 }
 .contact .row .map {
   flex: 1 1 37rem;
+  height: 680px;
   width: 100%;
-  box-shadow: -5px 3px 17px -3px rgba(0,0,0,0.48);
+  box-shadow: -5px 3px 17px -3px rgba(0, 0, 0, 0.48);
   border-radius: 25px;
 }
 .contact .row .form {
   flex: 1 1 40rem;
+  height: 300px;
 }
 .contact .row .form .icons-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+  height: 200px;
 }
 .contact .row .form .icons-container .icons {
   flex: 1 1 12rem;
+  height: 200px;
   text-align: center;
 }
 .contact .row .form .icons-container .icons i {
@@ -104,17 +105,16 @@
   background: #f0b212;
   color: #323232;
   font-size: 2rem;
-  margin-bottom: 1rem;
 }
 .contact .row .form .icons-container .icons h3 {
   padding: 1rem 0;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   color: #323232;
 }
 .contact .row .form .icons-container .icons p {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1rem;
   color: #323232;
 }
 .contact .row form {
@@ -124,14 +124,14 @@
 .contact .row form .box,
 .login .box {
   padding: 0 10px;
-  height: 60px;
+  height: 40px;
   border-radius: 8px;
-  font-size: 1.6rem;
+  font-size: 1rem;
   color: #323232;
   background: none;
   border: 0.2rem solid #32323274;
   text-transform: none;
-  margin: 0.7rem 0;
+  margin: 0.3rem 0;
 }
 .contact .row #tipo-contato {
   color: #323232;
@@ -144,7 +144,9 @@
   border-color: #f0b212;
 }
 .contact .row .form form textarea {
-  height: 15rem;
+  margin-bottom: 0.6rem;
+  padding-top: 5px;
+  height: 10rem;
   resize: none;
 }
 
@@ -156,27 +158,28 @@
   display: grid;
   grid-template-columns: 1fr;
 }
-.footer{
+.footer {
   background-color: #323232;
+  margin-top: 50px;
 }
-.footer .desenvolvedores{
+.footer .desenvolvedores {
   display: flex;
   justify-content: space-around;
   margin-bottom: 70px;
   margin-top: 25px;
 }
 
-.footer .desenvolvedores img{
+.footer .desenvolvedores img {
   width: 120px;
   border-radius: 50%;
   height: 120px;
 }
-.footer h1{
+.footer h1 {
   color: #fff;
   font-size: 40px;
   font-weight: 800;
 }
-.footer .desenvolvedores .desenvolvedores-perfil{
+.footer .desenvolvedores .desenvolvedores-perfil {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -185,4 +188,97 @@
   font-size: 18px;
   font-weight: 600;
 }
+.footer .social-links{
+  gap: 25px;
+}
 
+.card-dev {
+  width: 190px;
+  height: 254px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.card-dev:hover {
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.623);
+  background-color: #f0b212;
+}
+
+.card-dev .blob {
+  height: 10px;
+  width: 75%;
+  border-radius: 0 0 30px 30px;
+  margin: 0 auto;
+  background-color: #f0b212;
+  visibility: visible;
+  transition: all 0.3s;
+}
+
+.card-dev:hover .blob {
+  height: 0;
+}
+
+.card-dev .img {
+  margin: 30px auto 10px auto;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+.card-dev .img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.card-dev:hover .img{
+  width: 100%;
+  height: 70%;
+  border-radius: 10px 10px 0 0;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  z-index: 99999;
+}
+
+.card-dev h2 {
+  padding: 15px 10px;
+  font-size: 25px;
+  transition: all 0.1s;
+  z-index: -99;
+  line-height: 17px;
+}
+.card-dev span {
+  font-size: 18px;
+}
+.card-dev:hover h2 {
+  display: none;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.card-dev > .social-links {
+  display: none;
+  transition: all 0.1s;
+}
+.card-dev > .social-links a {
+  font-size: 15px;
+  display: inline-block;
+  color: #323232;
+}
+.card-dev > .social-links a i {
+  font-size: 25px;
+  display: inline-block;
+  color: #323232;
+}
+
+.card-dev:hover .social-links {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px;
+  transition: all 0.3s;
+}
