@@ -5,30 +5,55 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <title>Nosso App</title>
 </head>
 
 <body>
-  <div class="logo-bg">
-    <img class="logo-app" src="./images/Logo.svg" alt="">
-  </div>
+  <header class="header-contato">
+    <a href="index.html" class="logo"><img src="./images/Logo.svg" alt=""></a>
+    <nav class="navbar-contato">
+      <button class="cta">
+        <span><a href="index.html">Home <svg viewBox="0 0 13 10" height="10px" width="15px">
+              <polyline points="8 1 12 5 8 9"></polyline>
+              <path d="M1,5 L11,5"></path>
+            </svg></a></span>
+
+      </button>
+      <div id="menu-btn" class="fas fa-bars icons"></div>
+    </nav>
+  </header>
+
   <main class="container-bg">
     <div class="container">
       <div class="logo">
-        <img src="./images/Logo-app.png" alt="">
+        <img src="./images/Wlappaper.png" alt="">
       </div>
       <div class="content">
         <div class="content-texto">
           <h1>BAIXE NOSSO APP!</h1>
-          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit provident quisquam inventore, dolores blanditiis ut, corrupti officia distinctio placeat repudiandae, iure illo. Dolore tempore velit minus vel. Doloribus, atque laborum?</span>
+          <span class="content-text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit provident quisquam inventore, dolores blanditiis ut, corrupti officia distinctio placeat repudiandae, iure illo. Dolore tempore velit minus vel. Doloribus, atque laborum?</span>
         </div>
         <div class="content-icons">
           <div class="bloco-bg">
-            <div class="bloco"></div>
-            <div class="bloco"></div>
+            <a class="bloco" href="https://play.google.com/store/games" target="_blank">
+              <i class="fa-brands fa-android"></i>
+              <div class="divisao">
+                <p class="text-play">Disponível no </p>
+                <span>GOOGLE PLAY</span>
+              </div>
+            </a>
+            <a class="bloco" href="https://www.apple.com/br/app-store/" target="_blank">
+              <i class="fa-brands fa-apple"></i>
+              <div class="divisao">
+                <p class="text-play">Baixar na </p>
+                <span>APPLE STORE</span>
+              </div>
+            </a>
           </div>
-          <img src="./images/codigo-qr.png" alt="codigo-qr">
+          <img class="qr-code" src="./images/codigo-qr.png" alt="codigo-qr">
         </div>
       </div>
     </div>
